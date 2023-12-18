@@ -16,8 +16,8 @@ terraform {
 }
 
 locals {
-  account_name = "" #CHANGEME
-  repo_name = "" #CHANGEME
+  account_name = "idjohnson" #CHANGEME
+  repo_name = "abbey-quickstart-demo" #CHANGEME
 
   repo = "github://${local.account_name}/${local.repo_name}"
   output_location = "${local.repo}/access.tf"
@@ -39,7 +39,7 @@ resource "abbey_grant_kit" "abbey_demo_site" {
     steps = [
       {
         reviewers = {
-          one_of = ["alice@example.com"] #CHANGEME
+          one_of = ["isaac.johnson@gmail.com"] #CHANGEME
         }
       }
     ]
